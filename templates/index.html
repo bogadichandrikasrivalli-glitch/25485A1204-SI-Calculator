@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple Intrest Calculator</title>
+</head>
+<body>
+    <section>
+    <center>
+    <h1 style ="color: rgba(12, 8, 243, 0.911); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: xx-large;"> Simple Intrest Calculator </h1>
+    <form method="post">
+        <label> Enter Principle amount</label>
+        <input type="number" name="p" step="any" id="">
+        <label> Enter Time </label>
+        <input type="number" name="t" step="any" id="">
+        <label> Enter Rate of Intrest</label>
+        <input type="number" name="r" step="any" id=""><br><br>
+        <button type="submit"> Calculate </button>
+    </form>
+    
+    {# Display Output#}
+    {% if result %}
+        <hr>
+        <h3 style="color: rgb(8, 112, 8); font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;"> Result </h3>
+        <p> Principle : {{ p }}</p><br>
+        <p> Rate : {{ r }}</p><br>
+        <p> Time : {{ t }}</p><br>
+        <span>
+            <b> Simple Intrest - {{ result}} </b><br>
+            <b> Total Amount - {{ total }}</b>
+        </span>
+    {% endif %}
+
+
+        </center>
+
+    </section>
+    
+</body>
+</html>
